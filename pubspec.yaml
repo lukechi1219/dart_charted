@@ -1,0 +1,25 @@
+name: dart_charted
+version: 0.5.0
+authors:
+- Prasad Sunkari <prsd@google.com>
+- Michael Cheng <midoringo@google.com>
+- Yan Qiao <yqiao@google.com>
+description: Visualization toolkit for Dart - Provides D3 (http://d3js.org) like Selection API, utilities to achieve data driven DOM and an easy-to-use Charting library based on the Selection API.
+homepage: https://github.com/google/charted
+environment:
+  sdk: '>=1.20.1 <2.0.0'
+dependencies:
+  charted: "^0.5.0"
+  browser: any
+  intl: any
+  logging: any
+  observable: '>=0.14.0 <0.15.0'
+  quiver: any
+dev_dependencies:
+  hop: '>=0.27.0'
+  http: any
+  unittest: any
+transformers:
+- $dart2js:
+    minify: true
+    commandLineOptions: [--trust-type-annotations, --trust-primitives]
